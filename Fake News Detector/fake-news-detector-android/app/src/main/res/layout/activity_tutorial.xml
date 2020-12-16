@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="37dp"
+    android:layout_marginEnd="37dp"
+    android:layout_marginBottom="19dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_above="@+id/btn_complete_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        app:ci_drawable="@drawable/shape_circle_tutorial"/>
+
+    <Button
+        android:id="@+id/btn_complete_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="@string/tutorial_button"
+        android:background="@drawable/share_tutorial_button"
+        android:textAllCaps="false" />
+</RelativeLayout>
